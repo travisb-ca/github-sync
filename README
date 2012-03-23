@@ -1,3 +1,35 @@
 Simple scripts to mirror a portion of a Subversion repository to github.
 
 Originally taken from http://www.icoretech.org/2009/08/how-to-mirror-a-svn-repository-on-github/
+
+Setup:
+Before the first repository can be synced you need to create an ssh key
+specifically for syncing:
+
+ssh-keygen -t dsa -f ~/.ssh/id_dsa_github_for_mirror
+
+Then you need to add the following entry to ~/.ssh/config:
+
+Host githubmirror
+User git
+Hostname github.com
+IdentityFile ~/.ssh/id_dsa_github_mirror
+
+Finally you need to add this key to your github account:
+
+cat ~/.ssh/id_dsa_github_mirror.pub
+
+Then you are ready to sync projects.
+
+
+Initial Sync:
+
+Before beginning you need to create a new repository on github with the project name. Then you perform the initial sync with the following command:
+
+mirror.sh github_username projname svn://svn/path
+
+This will create and initially sync the project. You will see a new directory and git repo named projname. 
+
+Syncing later:
+
+The sync.sh script goes through every directory in the current directory and syncs then first with the SVN repo and then github. It has no arguments.
