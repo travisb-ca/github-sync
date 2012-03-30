@@ -23,9 +23,9 @@ if [ -z $3 ]; then
 fi
 
 if [ "$4" == "-T" ]; then
-	options = ""
+	options=""
 else
-	options = "--stdlayout"
+	options="--stdlayout"
 fi
 
 mkdir $2
