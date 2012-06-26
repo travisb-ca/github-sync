@@ -32,4 +32,4 @@ This will create and initially sync the project. You will see a new directory an
 
 Syncing later:
 
-The sync.sh script goes through every directory in the current directory and syncs then first with the SVN repo and then github. It has no arguments.
+The sync.sh script goes through every directory in the current directory and syncs them first with the SVN repo and then github. It takes no arguments.
