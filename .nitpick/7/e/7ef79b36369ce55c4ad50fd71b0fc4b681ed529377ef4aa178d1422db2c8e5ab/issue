@@ -10,5 +10,7 @@ Reported_By: travisb@travisbrown.ca
 Type: Bug
 Component: Core
 Owner: travisb@travisbrown.ca
+Depends_On:
+Duplicate_Of:
 --
 The tags and branches of a project isn't pushed to github. It is questionable if the branches should be pushed, but certainly the tags should be pushed as real git tags.
