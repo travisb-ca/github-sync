@@ -1,0 +1,9 @@
+Attachment: 
+Attachment-filename: 
+Date: 2012-08-01 05:49:39
+Parent: issue
+User: travisb@travisbrown.ca
+--
+I've changed the script to convert the tag branches created by git-svn into a real tag and then push all tags.
+
+I shouldn't be too difficult to push branches, but I'm not sure I want to do that yet.
