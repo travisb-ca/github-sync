@@ -35,4 +35,4 @@ git svn init $options $3
 git svn fetch
 git gc
 git remote add origin git@githubmirror:$1/$2.git
-git push origin master
+git push --tags origin master

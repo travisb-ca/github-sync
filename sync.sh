@@ -7,7 +7,7 @@ for dir in */; do
 	cd $dir
 	git svn rebase | grep "Current branch master is up to date" &> /dev/null
 	if [ $? == 1 ]; then
-		git push origin master &> /dev/null
+		git push --tags origin master &> /dev/null
 	fi
 	cd ..
 done
