@@ -15,9 +15,14 @@ for dir in */; do
 		needs_push=1
 	fi
 
+	# Convert any tag branches into real git tags
+	/usr/libexec/git-core/git-for-each-ref refs/remotes/tags | cut -d / -f 4- |
+	while read ref; do
+		git tag -a "$ref" -m"Convert git-svn branch-tag into real tag"  "refs/remotes/tags/$ref" &>/dev/null
+	done
+
 	if [ $needs_push == 1 ]; then
-		echo "Pushing."
-		#git push --tags origin master &> /dev/null
+		git push --tags origin master &> /dev/null
 	fi
 	cd ..
 done
