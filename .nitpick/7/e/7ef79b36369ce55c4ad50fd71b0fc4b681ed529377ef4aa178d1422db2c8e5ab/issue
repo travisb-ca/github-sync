@@ -1,16 +1,16 @@
-Severity: Major
-Title: Tags and Braches not pushed to github
-Priority: 1
-Date: 2012-06-18 05:12:43
-State: Open
-Fix_By: Next_Release
-Resolution: None
-Seen_In_Build: 
-Reported_By: travisb@travisbrown.ca
-Type: Bug
 Component: Core
+Date: 2012-06-18 05:12:43
+Depends_On: 
+Duplicate_Of: 
+Fix_By: Next_Release
 Owner: travisb@travisbrown.ca
-Depends_On:
-Duplicate_Of:
+Priority: 1
+Reported_By: travisb@travisbrown.ca
+Resolution: Fixed
+Seen_In_Build: 
+Severity: Major
+State: Closed
+Title: Tags and Braches not pushed to github
+Type: Bug
 --
 The tags and branches of a project isn't pushed to github. It is questionable if the branches should be pushed, but certainly the tags should be pushed as real git tags.
