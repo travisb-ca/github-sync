@@ -6,4 +6,5 @@ vcs: svn
 fix_by: Next_Release Eventually
 components: Core
 type: Bug Feature Regression
+project_name: Github Sync
 --
