@@ -12,5 +12,7 @@ Severity: Major
 State: Closed
 Title: Tags and Braches not pushed to github
 Type: Bug
+Units_of_Work: 1000
+Percent_Complete: 0
 --
 The tags and branches of a project isn't pushed to github. It is questionable if the branches should be pushed, but certainly the tags should be pushed as real git tags.
