@@ -6,3 +6,4 @@ cryptlist svn+ssh://svnrepo/projects/cryptlist/tags/1.0 -T
 furc-cli svn+ssh://svnrepo/projects/furcadia/furc-cli
 nitpic svn+ssh://svnrepo/projects/nitpick
 bug_interchange svn+ssh://svnrepo/projects/bug_interchange
+furc-curses svn+ssh://svnrepo/projects/furcadia/furc-curses
