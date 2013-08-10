@@ -6,11 +6,11 @@ for dir in */; do
 	echo "Syncing $dir"
 	cd $dir
 	needs_push=0
-	git svn fetch 2> /dev/null | grep '$' &> /dev/null
+	git svn fetch --authors-file=../usernames 2> /dev/null | grep '$' &> /dev/null
 	if [ $? == 0 ]; then
 		needs_push=1
 	fi
-	git svn rebase | grep "Current branch master is up to date" &>/dev/null
+	git svn rebase --authors-file=../usernames | grep "Current branch master is up to date" &>/dev/null
 	if [ $? == 1 ]; then 
 		needs_push=1
 	fi

@@ -32,7 +32,7 @@ mkdir $2
 cd $2
 git init
 git svn init $options $3
-git svn fetch
+git svn fetch --authors-file=../usernames
 git gc
 git remote add origin git@githubmirror:$1/$2.git
 git push --tags origin master
