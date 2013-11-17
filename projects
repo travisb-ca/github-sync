@@ -10,3 +10,4 @@ furc-curses svn+ssh://svnrepo/projects/furcadia/furc-curses
 tachyon svn+ssh://svnrepo/projects/tachyon
 ctags svn+ssh://svnrepo/projects/configurations/ctags -T
 svn svn+ssh://svnrepo/projects/svn -T
+lousy svn+ssh://svnrepo/projects/lousy
