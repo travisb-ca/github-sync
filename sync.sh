@@ -16,7 +16,7 @@ for dir in */; do
 	fi
 
 	# Convert any tag branches into real git tags
-	/usr/libexec/git-core/git-for-each-ref refs/remotes/tags | cut -d / -f 4- |
+	/opt/local/libexec/git-core/git-for-each-ref refs/remotes/tags | cut -d / -f 4- |
 	while read ref; do
 		git tag -a "$ref" -m"Convert git-svn branch-tag into real tag"  "refs/remotes/tags/$ref" &>/dev/null
 	done
