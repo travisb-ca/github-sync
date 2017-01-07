@@ -1,12 +1,9 @@
 The list of projects I have synced to github:
 
-libfurc svn+ssh://svnrepo/projects/furcadia/libfurc
 github-sync svn+ssh://svnrepo/projects/github-sync -T
 cryptlist svn+ssh://svnrepo/projects/cryptlist/tags/1.0 -T
-furc-cli svn+ssh://svnrepo/projects/furcadia/furc-cli
 nitpick svn+ssh://svnrepo/projects/nitpick
 bug_interchange svn+ssh://svnrepo/projects/bug_interchange
-furc-curses svn+ssh://svnrepo/projects/furcadia/furc-curses
 tachyon svn+ssh://svnrepo/projects/tachyon
 ctags svn+ssh://svnrepo/projects/configurations/ctags -T
 svn svn+ssh://svnrepo/projects/svn -T
